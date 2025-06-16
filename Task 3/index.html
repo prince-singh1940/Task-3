@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Player Information</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e6f2ff;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #005f99;
+      margin-bottom: 40px;
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .player-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .player-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .player-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #0096c7;
+    }
+
+    .player-card h3 {
+      font-size: 1.4em;
+      color: #0077b6;
+      margin: 10px 0 5px;
+      text-transform: capitalize;
+    }
+
+    .player-card p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 10px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Player Information</h1>
+    <div class="player-grid">
+
+      <div class="player-card">
+        <img src="/Image/download.jpeg" alt="Virat Kohli">
+        <h3>Virat Kohli</h3>
+        <p>Position: Batsman</p>
+        <p>Country: India</p>
+        <p>Age: 35</p>
+      </div>
+
+      <div class="player-card">
+        <img src="/Image/download (1).jpeg" alt="Rohit Sharma">
+        <h3>Rohit Sharma</h3>
+        <p>Position: Captain</p>
+        <p>Country: India</p>
+        <p>Age: 37</p>
+      </div>
+
+      <div class="player-card">
+        <img src="/Image/download (2).jpeg" alt="Sachin Tendulkar">
+        <h3>Sachin Tendulkar</h3>
+        <p>Position: Legend</p>
+        <p>Country: India</p>
+        <p>Age: 45</p>
+      </div>
+
+      <div class="player-card">
+        <img src="/Image/download (3).jpeg" alt="KL Rahul">
+        <h3>KL Rahul</h3>
+        <p>Position: Wicket Keeper</p>
+        <p>Country: India</p>
+        <p>Age: 31</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
